@@ -5,7 +5,8 @@ import uuid
 
 def lambda_handler(event, context):
     # 1. URL del IGP con los últimos sismos reportados
-    url = "https://ultimosismo.igp.gob.pe/ultimo-sismo/sismos-reportados"
+    url = "https://ultimosismo.igp.gob.pe/ultimo-sismo/sismos-reportados
+"
     response = requests.get(url)
 
     if response.status_code != 200:
