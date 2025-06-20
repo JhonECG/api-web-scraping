@@ -25,10 +25,10 @@ functions:
 
 resources:
   Resources:
-    TablaWebScrapping:
+    SismosIGPTable:  # <- nombre lógico (puedes dejarlo si no te molesta)
       Type: AWS::DynamoDB::Table
       Properties:
-        TableName: TablaWebScrapping
+        TableName: SismosIGP  # <- nombre real de la tabla en AWS
         AttributeDefinitions:
           - AttributeName: id
             AttributeType: S
@@ -36,3 +36,4 @@ resources:
           - AttributeName: id
             KeyType: HASH
         BillingMode: PAY_PER_REQUEST
+
